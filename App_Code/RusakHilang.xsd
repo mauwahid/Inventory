@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RusakHilang" targetNamespace="http://tempuri.org/RusakHilang.xsd" xmlns:mstns="http://tempuri.org/RusakHilang.xsd" xmlns="http://tempuri.org/RusakHilang.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="inventoryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="inventoryConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.inventoryConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_inv_rusak_hilangTableAdapter" Name="v_inv_rusak_hilang">
+            <MainSource>
+              <DbSource ConnectionRef="inventoryConnectionString (Web.config)" DbObjectName="inventory.dbo.v_inv_rusak_hilang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_gedung, nama_gedung, id_lokasi, lokasi_lantai, id_ruangan, nama_ruangan, id_inv_ruangan, id_inventaris, nama_inventaris, qty_tersedia, qty_rusak, qty_hilang, keterangan FROM dbo.v_inv_rusak_hilang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_gedung" DataSetColumn="id_gedung" />
+              <Mapping SourceColumn="nama_gedung" DataSetColumn="nama_gedung" />
+              <Mapping SourceColumn="id_lokasi" DataSetColumn="id_lokasi" />
+              <Mapping SourceColumn="lokasi_lantai" DataSetColumn="lokasi_lantai" />
+              <Mapping SourceColumn="id_ruangan" DataSetColumn="id_ruangan" />
+              <Mapping SourceColumn="nama_ruangan" DataSetColumn="nama_ruangan" />
+              <Mapping SourceColumn="id_inv_ruangan" DataSetColumn="id_inv_ruangan" />
+              <Mapping SourceColumn="id_inventaris" DataSetColumn="id_inventaris" />
+              <Mapping SourceColumn="nama_inventaris" DataSetColumn="nama_inventaris" />
+              <Mapping SourceColumn="qty_tersedia" DataSetColumn="qty_tersedia" />
+              <Mapping SourceColumn="qty_rusak" DataSetColumn="qty_rusak" />
+              <Mapping SourceColumn="qty_hilang" DataSetColumn="qty_hilang" />
+              <Mapping SourceColumn="keterangan" DataSetColumn="keterangan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RusakHilang" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_inv_rusak_hilang">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_gedung" type="xs:int" />
+              <xs:element name="nama_gedung">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_lokasi" type="xs:int" />
+              <xs:element name="lokasi_lantai" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_ruangan" type="xs:int" />
+              <xs:element name="nama_ruangan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_inv_ruangan" type="xs:long" />
+              <xs:element name="id_inventaris" type="xs:long" />
+              <xs:element name="nama_inventaris">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty_tersedia" type="xs:int" minOccurs="0" />
+              <xs:element name="qty_rusak" type="xs:int" minOccurs="0" />
+              <xs:element name="qty_hilang" type="xs:int" minOccurs="0" />
+              <xs:element name="keterangan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

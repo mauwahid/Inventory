@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="INV_SVC_DTL" targetNamespace="http://tempuri.org/INV_SVC_DTL.xsd" xmlns:mstns="http://tempuri.org/INV_SVC_DTL.xsd" xmlns="http://tempuri.org/INV_SVC_DTL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="InventoryConn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InventoryConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.InventoryConn.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_service_inventaris_detailTableAdapter" Name="v_service_inventaris_detail">
+            <MainSource>
+              <DbSource ConnectionRef="InventoryConn (Web.config)" DbObjectName="InventoryRev.dbo.v_service_inventaris_detail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_pengajuan_service_detail, id_pengajuan_service, id_inventaris, qty, catatan_kabag, created_date, biaya_service, no_pengajuan_service, nama_inventaris FROM dbo.v_service_inventaris_detail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_pengajuan_service_detail" DataSetColumn="id_pengajuan_service_detail" />
+              <Mapping SourceColumn="id_pengajuan_service" DataSetColumn="id_pengajuan_service" />
+              <Mapping SourceColumn="id_inventaris" DataSetColumn="id_inventaris" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="catatan_kabag" DataSetColumn="catatan_kabag" />
+              <Mapping SourceColumn="created_date" DataSetColumn="created_date" />
+              <Mapping SourceColumn="biaya_service" DataSetColumn="biaya_service" />
+              <Mapping SourceColumn="no_pengajuan_service" DataSetColumn="no_pengajuan_service" />
+              <Mapping SourceColumn="nama_inventaris" DataSetColumn="nama_inventaris" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="INV_SVC_DTL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_service_inventaris_detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_pengajuan_service_detail" type="xs:long" />
+              <xs:element name="id_pengajuan_service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_inventaris" type="xs:int" />
+              <xs:element name="qty" type="xs:int" />
+              <xs:element name="catatan_kabag" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="created_date" type="xs:dateTime" />
+              <xs:element name="biaya_service" type="xs:int" minOccurs="0" />
+              <xs:element name="no_pengajuan_service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_inventaris">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

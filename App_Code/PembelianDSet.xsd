@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PembelianDSet" targetNamespace="http://tempuri.org/PembelianDSet.xsd" xmlns:mstns="http://tempuri.org/PembelianDSet.xsd" xmlns="http://tempuri.org/PembelianDSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="InventoryConn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InventoryConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.InventoryConn.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_pembelian_reportTableAdapter" GeneratorDataComponentClassName="v_pembelian_reportTableAdapter" Name="v_pembelian_report" UserDataComponentName="v_pembelian_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InventoryConn (Web.config)" DbObjectName="inventory.dbo.v_pembelian_report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT id, id_pembelian, judul, tanggal, keterangan, no_pengajuan, harga_total FROM dbo.v_pembelian_report</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="id_pembelian" DataSetColumn="id_pembelian" />
+              <Mapping SourceColumn="judul" DataSetColumn="judul" />
+              <Mapping SourceColumn="tanggal" DataSetColumn="tanggal" />
+              <Mapping SourceColumn="keterangan" DataSetColumn="keterangan" />
+              <Mapping SourceColumn="no_pengajuan" DataSetColumn="no_pengajuan" />
+              <Mapping SourceColumn="harga_total" DataSetColumn="harga_total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PembelianDSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="PembelianDSet" msprop:Generator_UserDSName="PembelianDSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_pembelian_report" msprop:Generator_TableClassName="v_pembelian_reportDataTable" msprop:Generator_TableVarName="tablev_pembelian_report" msprop:Generator_TablePropName="v_pembelian_report" msprop:Generator_RowDeletingName="v_pembelian_reportRowDeleting" msprop:Generator_RowChangingName="v_pembelian_reportRowChanging" msprop:Generator_RowEvHandlerName="v_pembelian_reportRowChangeEventHandler" msprop:Generator_RowDeletedName="v_pembelian_reportRowDeleted" msprop:Generator_UserTableName="v_pembelian_report" msprop:Generator_RowChangedName="v_pembelian_reportRowChanged" msprop:Generator_RowEvArgName="v_pembelian_reportRowChangeEvent" msprop:Generator_RowClassName="v_pembelian_reportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="id_pembelian" msprop:Generator_ColumnVarNameInTable="columnid_pembelian" msprop:Generator_ColumnPropNameInRow="id_pembelian" msprop:Generator_ColumnPropNameInTable="id_pembelianColumn" msprop:Generator_UserColumnName="id_pembelian" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="judul" msprop:Generator_ColumnVarNameInTable="columnjudul" msprop:Generator_ColumnPropNameInRow="judul" msprop:Generator_ColumnPropNameInTable="judulColumn" msprop:Generator_UserColumnName="judul" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tanggal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntanggal" msprop:Generator_ColumnPropNameInRow="tanggal" msprop:Generator_ColumnPropNameInTable="tanggalColumn" msprop:Generator_UserColumnName="tanggal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="keterangan" msprop:Generator_ColumnVarNameInTable="columnketerangan" msprop:Generator_ColumnPropNameInRow="keterangan" msprop:Generator_ColumnPropNameInTable="keteranganColumn" msprop:Generator_UserColumnName="keterangan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="no_pengajuan" msprop:Generator_ColumnVarNameInTable="columnno_pengajuan" msprop:Generator_ColumnPropNameInRow="no_pengajuan" msprop:Generator_ColumnPropNameInTable="no_pengajuanColumn" msprop:Generator_UserColumnName="no_pengajuan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="harga_total" msprop:Generator_ColumnVarNameInTable="columnharga_total" msprop:Generator_ColumnPropNameInRow="harga_total" msprop:Generator_ColumnPropNameInTable="harga_totalColumn" msprop:Generator_UserColumnName="harga_total" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_pembelian_report" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

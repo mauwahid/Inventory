@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PenerimaanDetail" targetNamespace="http://tempuri.org/PenerimaanDetail.xsd" xmlns:mstns="http://tempuri.org/PenerimaanDetail.xsd" xmlns="http://tempuri.org/PenerimaanDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="InventoryConn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InventoryConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.InventoryConn.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_penerimaan_report_detailTableAdapter" GeneratorDataComponentClassName="v_penerimaan_report_detailTableAdapter" Name="v_penerimaan_report_detail" UserDataComponentName="v_penerimaan_report_detailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InventoryConn (Web.config)" DbObjectName="inventory.dbo.v_penerimaan_report_detail_barang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT id, id_penerimaan, id_inventaris, id_pengajuan_inventaris_detail, qty_diajukan, catatan, id_user_kabag, qty_diterima, tanggal_diterima, created_date, creator, last_updated_date, updater, nama_inventaris, memo_kabag FROM dbo.v_penerimaan_report_detail_barang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="id_penerimaan" DataSetColumn="id_penerimaan" />
+              <Mapping SourceColumn="id_inventaris" DataSetColumn="id_inventaris" />
+              <Mapping SourceColumn="id_pengajuan_inventaris_detail" DataSetColumn="id_pengajuan_inventaris_detail" />
+              <Mapping SourceColumn="qty_diajukan" DataSetColumn="qty_diajukan" />
+              <Mapping SourceColumn="catatan" DataSetColumn="catatan" />
+              <Mapping SourceColumn="id_user_kabag" DataSetColumn="id_user_kabag" />
+              <Mapping SourceColumn="qty_diterima" DataSetColumn="qty_diterima" />
+              <Mapping SourceColumn="tanggal_diterima" DataSetColumn="tanggal_diterima" />
+              <Mapping SourceColumn="created_date" DataSetColumn="created_date" />
+              <Mapping SourceColumn="creator" DataSetColumn="creator" />
+              <Mapping SourceColumn="last_updated_date" DataSetColumn="last_updated_date" />
+              <Mapping SourceColumn="updater" DataSetColumn="updater" />
+              <Mapping SourceColumn="nama_inventaris" DataSetColumn="nama_inventaris" />
+              <Mapping SourceColumn="memo_kabag" DataSetColumn="memo_kabag" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PenerimaanDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="PenerimaanDetail" msprop:Generator_UserDSName="PenerimaanDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_penerimaan_report_detail" msprop:Generator_TableClassName="v_penerimaan_report_detailDataTable" msprop:Generator_TableVarName="tablev_penerimaan_report_detail" msprop:Generator_TablePropName="v_penerimaan_report_detail" msprop:Generator_RowDeletingName="v_penerimaan_report_detailRowDeleting" msprop:Generator_RowChangingName="v_penerimaan_report_detailRowChanging" msprop:Generator_RowEvHandlerName="v_penerimaan_report_detailRowChangeEventHandler" msprop:Generator_RowDeletedName="v_penerimaan_report_detailRowDeleted" msprop:Generator_UserTableName="v_penerimaan_report_detail" msprop:Generator_RowChangedName="v_penerimaan_report_detailRowChanged" msprop:Generator_RowEvArgName="v_penerimaan_report_detailRowChangeEvent" msprop:Generator_RowClassName="v_penerimaan_report_detailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:long" />
+              <xs:element name="id_penerimaan" msprop:Generator_ColumnVarNameInTable="columnid_penerimaan" msprop:Generator_ColumnPropNameInRow="id_penerimaan" msprop:Generator_ColumnPropNameInTable="id_penerimaanColumn" msprop:Generator_UserColumnName="id_penerimaan" type="xs:long" />
+              <xs:element name="id_inventaris" msprop:Generator_ColumnVarNameInTable="columnid_inventaris" msprop:Generator_ColumnPropNameInRow="id_inventaris" msprop:Generator_ColumnPropNameInTable="id_inventarisColumn" msprop:Generator_UserColumnName="id_inventaris" type="xs:long" />
+              <xs:element name="id_pengajuan_inventaris_detail" msprop:Generator_ColumnVarNameInTable="columnid_pengajuan_inventaris_detail" msprop:Generator_ColumnPropNameInRow="id_pengajuan_inventaris_detail" msprop:Generator_ColumnPropNameInTable="id_pengajuan_inventaris_detailColumn" msprop:Generator_UserColumnName="id_pengajuan_inventaris_detail" type="xs:long" />
+              <xs:element name="qty_diajukan" msprop:Generator_ColumnVarNameInTable="columnqty_diajukan" msprop:Generator_ColumnPropNameInRow="qty_diajukan" msprop:Generator_ColumnPropNameInTable="qty_diajukanColumn" msprop:Generator_UserColumnName="qty_diajukan" type="xs:int" />
+              <xs:element name="catatan" msprop:Generator_ColumnVarNameInTable="columncatatan" msprop:Generator_ColumnPropNameInRow="catatan" msprop:Generator_ColumnPropNameInTable="catatanColumn" msprop:Generator_UserColumnName="catatan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_user_kabag" msprop:Generator_ColumnVarNameInTable="columnid_user_kabag" msprop:Generator_ColumnPropNameInRow="id_user_kabag" msprop:Generator_ColumnPropNameInTable="id_user_kabagColumn" msprop:Generator_UserColumnName="id_user_kabag" type="xs:int" minOccurs="0" />
+              <xs:element name="qty_diterima" msprop:Generator_ColumnVarNameInTable="columnqty_diterima" msprop:Generator_ColumnPropNameInRow="qty_diterima" msprop:Generator_ColumnPropNameInTable="qty_diterimaColumn" msprop:Generator_UserColumnName="qty_diterima" type="xs:int" minOccurs="0" />
+              <xs:element name="tanggal_diterima" msprop:Generator_ColumnVarNameInTable="columntanggal_diterima" msprop:Generator_ColumnPropNameInRow="tanggal_diterima" msprop:Generator_ColumnPropNameInTable="tanggal_diterimaColumn" msprop:Generator_UserColumnName="tanggal_diterima" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="created_date" msprop:Generator_ColumnVarNameInTable="columncreated_date" msprop:Generator_ColumnPropNameInRow="created_date" msprop:Generator_ColumnPropNameInTable="created_dateColumn" msprop:Generator_UserColumnName="created_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="creator" msprop:Generator_ColumnVarNameInTable="columncreator" msprop:Generator_ColumnPropNameInRow="creator" msprop:Generator_ColumnPropNameInTable="creatorColumn" msprop:Generator_UserColumnName="creator" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_updated_date" msprop:Generator_ColumnVarNameInTable="columnlast_updated_date" msprop:Generator_ColumnPropNameInRow="last_updated_date" msprop:Generator_ColumnPropNameInTable="last_updated_dateColumn" msprop:Generator_UserColumnName="last_updated_date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="updater" msprop:Generator_ColumnVarNameInTable="columnupdater" msprop:Generator_ColumnPropNameInRow="updater" msprop:Generator_ColumnPropNameInTable="updaterColumn" msprop:Generator_UserColumnName="updater" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_inventaris" msprop:Generator_ColumnVarNameInTable="columnnama_inventaris" msprop:Generator_ColumnPropNameInRow="nama_inventaris" msprop:Generator_ColumnPropNameInTable="nama_inventarisColumn" msprop:Generator_UserColumnName="nama_inventaris" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="memo_kabag" msprop:Generator_ColumnVarNameInTable="columnmemo_kabag" msprop:Generator_ColumnPropNameInRow="memo_kabag" msprop:Generator_ColumnPropNameInTable="memo_kabagColumn" msprop:Generator_UserColumnName="memo_kabag" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_penerimaan_report_detail" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

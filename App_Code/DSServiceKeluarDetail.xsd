@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSServiceKeluarDetail" targetNamespace="http://tempuri.org/DSServiceKeluarDetail.xsd" xmlns:mstns="http://tempuri.org/DSServiceKeluarDetail.xsd" xmlns="http://tempuri.org/DSServiceKeluarDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="InventoryConn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InventoryConn (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.InventoryConn.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_service_keluar_det_reportTableAdapter" Name="v_service_keluar_det_report">
+            <MainSource>
+              <DbSource ConnectionRef="InventoryConn (Web.config)" DbObjectName="inventory.dbo.v_service_keluar_det_report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, id_sk, id_pengajuan, id_inventaris, qty, memo_kabag, gambar, created_date, harga_satuan, harga_total, nama_inventaris FROM dbo.v_service_keluar_det_report</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="id_sk" DataSetColumn="id_sk" />
+              <Mapping SourceColumn="id_pengajuan" DataSetColumn="id_pengajuan" />
+              <Mapping SourceColumn="id_inventaris" DataSetColumn="id_inventaris" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="memo_kabag" DataSetColumn="memo_kabag" />
+              <Mapping SourceColumn="gambar" DataSetColumn="gambar" />
+              <Mapping SourceColumn="created_date" DataSetColumn="created_date" />
+              <Mapping SourceColumn="harga_satuan" DataSetColumn="harga_satuan" />
+              <Mapping SourceColumn="harga_total" DataSetColumn="harga_total" />
+              <Mapping SourceColumn="nama_inventaris" DataSetColumn="nama_inventaris" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSServiceKeluarDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_service_keluar_det_report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:long" />
+              <xs:element name="id_sk" type="xs:int" />
+              <xs:element name="id_pengajuan" type="xs:int" />
+              <xs:element name="id_inventaris" type="xs:int" minOccurs="0" />
+              <xs:element name="qty" type="xs:int" />
+              <xs:element name="memo_kabag" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gambar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="created_date" type="xs:dateTime" />
+              <xs:element name="harga_satuan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="harga_total" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_inventaris" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_service_keluar_det_report" />
+      <xs:field xpath="mstns:id_sk" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

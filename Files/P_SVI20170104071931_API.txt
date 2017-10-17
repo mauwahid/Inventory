@@ -1,0 +1,426 @@
+1. http://118.97.149.154:8891/REST/api/user/add
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- saveCustomer
+
+2. http://118.97.149.154:8891/REST/api/user/validcheck
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- checkValidation
+
+3. http://118.97.149.154:8891/REST/api/user/login
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- loginLDAP
+
+4. ://118.97.149.154:8891/REST/api/user/logout
+
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- logout
+
+5. http://118.97.149.154:8891/REST/api/user/relogin
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- relogin
+
+
+6. http://118.97.149.154:8891/REST/api/user/profile
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- getProfile
+
+7. http://118.97.149.154:8891/REST/api/userdoc/get?
+
+
+--- com.bsw.api
+	-- TbBwCustDetAPI
+	 -- getDetail
+
+8. http://118.97.149.154:8891/REST/api/user/update
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- updateCustomer
+
+9. http://118.97.149.154:8891/REST/api/user/reset
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- resetPassowrd
+
+
+10. http://118.97.149.154:8891/REST/api/cmcom/menulokasi
+--- com.bsw.api
+	-- TbCmComAPI
+	 -- getMenuAlokasi
+
+
+11. http://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipePemohon
+
+
+12. http://118.97.149.154:8891/REST/api/country
+--- com.bsw.api
+	-- TbCMCountryCityTMPAPI
+	 -- getCountry
+
+
+
+13. http://118.97.149.154:8891/REST/api/user/profile
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- getProfile
+
+
+
+14. : http://118.97.149.154:8891/REST/api/user/update
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- updateCustomer
+
+15. http://118.97.149.154:8891/REST/api/comtmp/busstype
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getBussinessType
+
+
+16. ://118.97.149.154:8891/REST/api/userdoc/save
+
+--- com.bsw.api
+	-- TbBwCustDetAPI
+	 -- saveCustDet
+
+
+17. http://118.97.149.154:8891/REST/api/userdoc/doc
+
+--- com.bsw.api
+	-- TbBwCustDetAPI
+	 -- getDoc
+
+18. http://118.97.149.154:8891/REST/api/persetujuan/apprv
+--- com.bsw.api
+	-- TbBwPersetujuanAPI
+	 -- approve
+
+
+19. ://118.97.149.154:8891/REST/api/persetujuan/cek
+
+--- com.bsw.api
+	-- TbBwPersetujuanAPI
+	 -- cek
+
+20. http://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipePemohon
+
+21. http://118.97.149.154:8891/REST/api/user/getpemohon?tipe=IPH&custid=contohbpbatam
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- getPemohon
+
+
+22. ://118.97.149.154:8891/REST/api/iphpemohon/add
+
+
+--- com.bsw.api
+	-- TbBwIPHPemohonAPI
+	 -- saveCustomer
+
+23. http://118.97.149.154:8891/REST/api/ldaddr/wilkembang
+
+--- com.bsw.api
+	-- TbLdAddrCDAPI
+	 -- getWilayahPengembangan
+
+24. http://118.97.149.154:8891/REST/api/ldaddr/wilayah
+
+--- com.bsw.api
+	-- TbLdAddrCDAPI
+	 -- getWilayah
+
+25. http://118.97.149.154:8891/REST/api/ldaddr/subwilayah?wilayah=[paramwilayah]
+
+--- com.bsw.api
+	-- TbLdAddrCDAPI
+	 -- getSubWilayah
+
+26. http://118.97.149.154:8891/REST/api/ldaddr/wilkembangbywil?wilayah=BATAM
+
+--- com.bsw.api
+	-- TbLdAddrCDAPI
+	 -- getWilayahPengembanganByWilayah
+
+27. http://118.97.149.154:8891/REST/api/ldaddr/lokasi?wilayah=[paramwilayah]&subwilayah=[subwilayah]
+
+
+--- com.bsw.api
+	-- TbLdAddrCDAPI
+	 -- getLokasi
+
+28. http://118.97.149.154:8891/REST/api/comtmp/tipeuwto
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipeUWTO
+
+29. http://118.97.149.154:8891/REST/api/comtmp/penggunaanlahan
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getPenggunaanLahan
+
+30. : http://118.97.149.154:8891/REST/api/comtmp/carauwto
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getCaraUWTO
+
+31. http://118.97.149.154:8891/REST/api/tarif/uwto
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTarifUWTO
+
+32. http://118.97.149.154:8891/REST/api/comtmp/kondbayar
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getKondisiPembayaran
+
+33. http://118.97.149.154:8891/REST/api/iph/save
+
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- saveIPH
+
+34. http://118.97.149.154:8891/REST/api/iph/save
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- saveIPH
+
+35. http://118.97.149.154:8891/REST/api/cmcom/docmap?regTp=D4101&applTp=Z0304
+
+--- com.bsw.api
+	-- TbCmComAPI
+	 -- getDocMap
+
+36. ://118.97.149.154:8891/REST/api/iph/verdate
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- verIPH
+
+37. http://118.97.149.154:8891/REST/api/iph/avdt
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- getAvailableDate
+
+38. http://118.97.149.154:8891/REST/api/comtmp/statver
+
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipePemohon
+
+39. http://118.97.149.154:8891/REST/api/comtmp/jenispermohonan
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getJenisPermohonan
+
+40. ://118.97.149.154:8891/REST/api/iphstatreg
+
+
+--- com.bsw.api
+	-- TbBwIPHStatRegAPI
+
+41. http://118.97.149.154:8891/REST/api/iph/search
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- monitor
+
+42. http://118.97.149.154:8891/REST/api/dokumen/tandaterima
+
+
+--- com.bsw.api
+	-- DokumenAPI
+	 -- getTandaTerima
+
+43. http://118.97.149.154:8891/REST/api/dokumen/get
+
+--- com.bsw.api
+	-- DokumenAPI
+	 -- getFile
+
+44. http://118.97.149.154:8891/REST/api/iph/monitoring?token=902&creator=infomedia
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- monitor
+
+45. http://118.97.149.154:8891/REST/api/iph/get?token=123&idIPH=1
+
+--- com.bsw.api
+	-- TbBWIPHAPI
+	 -- getIPH
+
+
+46. http://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipePemohon
+
+47. http://118.97.149.154:8891/REST/api/country
+
+
+--- com.bsw.api
+	-- TbCMCountryCityTMPAPI
+
+
+48. http://118.97.149.154:8891/REST/api/user/profile
+
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- getProfile
+
+
+49. http://118.97.149.154:8891/REST/api/user/update
+
+
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- updateCustomer
+
+50. http://118.97.149.154:8891/REST/api/comtmp/busstype
+
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getBussinessType
+
+51. http://118.97.149.154:8891/REST/api/user/getpemohon?tipe=Pematangan&custid=contohbpbatam
+--- com.bsw.api
+	-- TbBwCustAPI
+	 -- getPemohon
+
+
+52. http://118.97.149.154:8891/REST/api/userdoc/save
+
+53. : http://118.97.149.154:8891/REST/api/userdoc/save
+
+54. http://118.97.149.154:8891/REST/api/userdoc/delete
+
+55. ://118.97.149.154:8891/REST/api/userdoc/doc
+
+56. http://118.97.149.154:8891/REST/api/userdoc/doc
+
+57. http://118.97.149.154:8891/REST/api/persetujuan/apprv
+
+58. ://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+
+59. http://118.97.149.154:8891/REST/api/pematangan/update
+
+60. http://118.97.149.154:8891/REST/api/pematangan/update
+
+61. : http://118.97.149.154:8891/REST/api/pematangandet/save
+
+62. http://118.97.149.154:8891/REST/api/tipepematangan
+
+63. http://118.97.149.154:8891/REST/api/comtmp/tipelokasipematangan
+--- com.bsw.api
+	-- TbComTMPAPI
+	 -- getTipePemohon
+
+64. ://118.97.149.154:8891/REST/api/pematangan/save
+
+65. http://118.97.149.154:8891/REST/api/pematangan/search
+
+66. http://118.97.149.154:8891/REST/api/docdetermine
+
+67. http://118.97.149.154:8891/REST/api/pematangan/monitoring?token=123&creator=infomedia
+
+68. ://118.97.149.154:8891/REST/api/pematangan/detl
+
+69. http://118.97.149.154:8891/REST/api/pematangandet/save
+
+70. http://118.97.149.154:8891/REST/api/pematangandet/update
+
+71. http://118.97.149.154:8891/REST/api/pematangandet/delete
+
+72. http://118.97.149.154:8891/REST/api/pematangan/docs
+
+73. http://118.97.149.154:8891/REST/api/pematangandoc/update
+
+74. ://118.97.149.154:8891/REST/api/pematangandoc/delete
+
+75. http://118.97.149.154:8891/REST/api/pematangandoc/transfer
+
+76. : http://118.97.149.154:8891/REST/api/pematangan/docs
+
+77. http://118.97.149.154:8891/REST/api/pematangandoc/save
+
+78. : http://118.97.149.154:8891/REST/api/pematangan/update
+
+79. ://118.97.149.154:8891/REST/api/pematangan/delete
+
+
+80. http://118.97.149.154:8891/REST/api/pematangan/get
+
+81. http://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+
+82. http://118.97.149.154:8891/REST/api/country
+
+83. : http://118.97.149.154:8891/REST/api/user/profile
+
+84. http://118.97.149.154:8891/REST/api/user/update
+
+85. ://118.97.149.154:8891/REST/api/comtmp/busstype
+
+86. http://118.97.149.154:8891/REST/api/user/getpemohon?tipe=Pematangan&custid=contohbpbatam
+
+87. http://118.97.149.154:8891/REST/api/userdoc/save
+
+88. http://118.97.149.154:8891/REST/api/userdoc/save
+
+89.  http://118.97.149.154:8891/REST/api/userdoc/doc
+
+90. ://118.97.149.154:8891/REST/api/userdoc/doc
+
+91. http://118.97.149.154:8891/REST/api/persetujuan/apprv
+
+92. http://118.97.149.154:8891/REST/api/comtmp/tipepemohon
+
+93. http://192.168.200.4:8891/REST/api/reklame/save
+
+94. ://192.168.200.4:8891/REST/api/reklame/update
+
+95. ://192.168.200.4:8891/REST/api/reklame/delete
+
+96. http://118.97.149.154:8891/REST/api/reklamedoc/delete
+
+97. http://118.97.149.154:8891/REST/api/reklame/add
+
+98. ://118.97.149.154:8891/REST/api/tarif/get
+
+99. http://118.97.149.154:8891/REST/api/reklame/monitoring
+
+100. http://118.97.149.154:8891/REST/api/docdetermine
+
+101. http://118.97.149.154:8891/REST/api/reklame/search
+

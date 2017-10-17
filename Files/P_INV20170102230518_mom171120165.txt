@@ -1,0 +1,34 @@
+MOM :
+
+1. Tanda plus di menu daftar permohonan diganti dengan button yang lebih jelas supaya user bisa melihat lebih jelas
+2. field kode pos yang ada di form dihilangkan
+3. Jenis dokumen yang diupload ditentukan secara langsung pada form
+4. Scope SOW hanya lahan dan Perizinan
+5. Perubahan di menu layanan disatu (Disatukan di satu list "Layanan Perizinan")
+6. Background menu layanan perizinan seperti di web
+7. Hilangkan : Alokasi Baru
+8. Menu Perizinan menunggu dari BP BATAM hari ini.
+9. SIKMB Dibuang
+10. Tim akan berada di BP Batam sampai Sabtu
+12. Kendala -kendala akan diselesaikan bersama selama tiga hari antara Telkom dan BP Batam :
+	1. Web Dev sangat lambat dan sering blank
+	2. Akun User untuk test aplikasi BSW
+	3. Web tidak bisa create user
+	4. Data Pengumuman akan dibuat dalam bentuk database
+	5. Memastikan mapping field yang ada di BSW
+	
+13. Dan semua akan ditandatangani dalam berita acara (MOM) antara kedua belah pihak
+
+
+-- 
+Regards,
+
+Maulana Wahid Abdurrahman
+
+Tangerang Selatan, Indonesia
+
+Phone  : +6282219194323 
+YM      : mau_wahid
+Web    : www.mauwahid.com
+	
+
